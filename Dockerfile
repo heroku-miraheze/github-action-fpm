@@ -10,6 +10,7 @@ RUN apk --no-cache add build-base
 RUN apk --no-cache add rpm
 RUN apk --no-cache add tar
 RUN apk --no-cache add zip
+RUN apk --no-cache add npm nodejs
 RUN gem install --no-document fpm -v 1.11.0
 
 COPY entrypoint.sh /entrypoint.sh
